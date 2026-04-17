@@ -19,10 +19,14 @@ classifiers = [
 dependencies = [
     "httpx>=0.27",
     "python-dotenv>=1.0",
+    "rich>=13.0",
 ]
 
 [project.optional-dependencies]
-dev = ["rich>=13.0", "pytest>=8.0", "pytest-asyncio>=0.23"]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+fanllm = "fanllm.cli:main"
 
 [build-system]
 requires = ["hatchling"]
