@@ -211,3 +211,7 @@ __marimo__/
 
 # Local scratch / debugging scripts
 try_it.py
+
+# macOS Finder metadata
+.DS_Store
+**/.DS_Store
