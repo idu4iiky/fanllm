@@ -25,21 +25,21 @@ LiteLLM and aisuite are unified wrappers: one call, one model, a consistent inte
 | Mistral    | mistral-large-latest        | MISTRAL_API_KEY      |
 
 Only providers whose API key is set will be called. Missing keys are skipped silently.
-A note on model defaults. The default model for each provider is chosen to be a sensible general-purpose option at a reasonable price point. Provider model IDs change over time — a model that's current today may be renamed or deprecated months from now. If you hit an error like HTTP 400 on a specific provider, check that provider's current model list and either open an issue or override the default via the models argument to run() (see the library quickstart below). fanllm deliberately does not maintain a catalogue of every model each provider offers; that's a scope choice to keep the tool small and readable.
+**A note on model defaults.** The default model for each provider is chosen to be a sensible general-purpose option at a reasonable price point. Provider model IDs change over time — a model that's current today may be renamed or deprecated months from now. If you hit an error like HTTP 400 on a specific provider, check that provider's current model list and either open an issue or override the default via the models argument to run() (see the library quickstart below). fanllm deliberately does not maintain a catalogue of every model each provider offers; that's a scope choice to keep the tool small and readable.
 
 ## Installation
 
-​```bash
+```bash
 pip install fanllm
-​```
+```
 
 Or, for development (clone and install in editable mode):
 
-​```bash
+```bash
 git clone https://github.com/yazararme/fanllm.git
 cd fanllm
 pip install -e .
-​```
+```
 
 ## Setup
 
