@@ -29,17 +29,17 @@ A note on model defaults. The default model for each provider is chosen to be a 
 
 ## Installation
 
-```bash
+​```bash
 pip install fanllm
-```
+​```
 
-Not yet on PyPI — for now, clone the repo and install locally:
+Or, for development (clone and install in editable mode):
 
-```bash
+​```bash
 git clone https://github.com/yazararme/fanllm.git
 cd fanllm
 pip install -e .
-```
+​```
 
 ## Setup
 
