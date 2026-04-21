@@ -112,8 +112,10 @@ def main() -> None:
 
     if providers is None and not available_providers():
         console.print(
-            "[bold red]error:[/] no API keys set for any provider. "
-            "See .env.example for the expected environment variables."
+            "[bold red]error:[/] no API keys set. Set at least one of: "
+            "OPENAI_API_KEY, ANTHROPIC_API_KEY, GOOGLE_API_KEY, PERPLEXITY_API_KEY, "
+            "DEEPSEEK_API_KEY, XAI_API_KEY, MISTRAL_API_KEY.\n"
+            "See https://github.com/yazararme/fanllm#setup for examples."
         )
         sys.exit(1)
 
